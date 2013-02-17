@@ -7,7 +7,7 @@
   "now I can say some shit about this function"
   {:testkey "value"}
   [^Integer x]
-  (println "Hello, World!")
+  (println "Hello, World! " x)
   (* x x))
 
 (foo 4)
@@ -27,3 +27,11 @@
 
 (defn -main [& args]
   (println "You are now rockin with the best"))
+
+;Multiple arities
+(defn my-name-is 
+  ([] (my-name-is "default"))
+  ([^String x] (println "Ny name is:" x)))
+
+(my-name-is)
+(my-name-is "Gavin M. Bell")
