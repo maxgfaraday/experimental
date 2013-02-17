@@ -1,4 +1,4 @@
-(ns experimental.core
+(ns org.sixthcolumn.core
   (:gen-class))
 
 (println "Just so you know I am bout to get busy on this money")

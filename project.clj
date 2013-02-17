@@ -6,15 +6,15 @@
   :dependencies [[org.clojure/clojure "1.4.0"]
                  [net.sf.ehcache/ehcache "2.3.1" :extension "pom"]]
   :offline? true
-  :source-paths ["src"]
-  :test-paths ["test"]
+  :source-paths ["src/clojure/main"]
+  :test-paths ["test/clojure/main"]
   :resource-paths ["etc"]
   :compile-path "build"
   :target-path "dist"
   :omit-source true
   :jar-exclusions [#"(?:^|/).git/"]
-  :aot [experimental.core]
-  :main experimental.core
+  :aot [org.sixthcolumn.core]
+  :main org.sixthcolumn.core
   :jar-name "codewrx-experimental.jar"
   :uberjar-name "codewrx-experimental-all.jar"
   :manifest {"Organization" "${organization}"

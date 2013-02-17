@@ -1,4 +1,4 @@
-(ns experimental.barber-shop)
+(ns org.sixthcolumn.experimental.barber-shop)
 (println "Welcome to the barber shop!")
 
 (def empty-seats (ref 3))
