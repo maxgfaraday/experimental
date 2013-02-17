@@ -1,11 +1,14 @@
-(ns org.sixthcolumn.core
+(ns ^{:doc "This is core code for sixthcolumn"
+      :author "Gavin M. Bell"} 
+  org.sixthcolumn.core
+  (:use [org.sixthcolumn.experimental.barber-shop :only (info about)] :reload-all :verbose)
   (:gen-class))
 
 (println "Just so you know I am bout to get busy on this money")
 
 (defn foo 
   "now I can say some shit about this function"
-  {:testkey "value"}
+  {::testkey "value"}
   [^Integer x]
   (println "Hello, World! " x)
   (* x x))
@@ -35,3 +38,8 @@
 
 (my-name-is)
 (my-name-is "Gavin M. Bell")
+
+(info)
+(about)
+;(org.sixthcolumn.experimental.barber-shop/launch)
+
